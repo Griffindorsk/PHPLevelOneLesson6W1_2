@@ -1,0 +1,199 @@
+/* normalize part (начало) */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+b, strong {
+    font-weight: bolder;
+}
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+    sub {
+        bottom: -0.25em;
+    }
+    sup {
+        top: -0.5em;
+    }
+ul {
+    list-style-position: inside;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+/* normalize part (конец) */
+
+.calc_body {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem auto;
+    width: 90vw;
+    min-width: 340px;
+    max-width: 414px;
+    background-color: #3e4247;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 4px black;
+}
+.display {
+    display: grid;
+    width: 90%;
+    background-color: #929a85;
+    margin: 0.8rem auto;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    text-align: right;
+    box-shadow: 2px 2px 2px #707780, -2px -2px 2px black;
+}
+.display p {
+    color: #222723;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.display_small {
+    display: grid;
+    width: 80%;
+    background-color: #929a85;
+    margin: 0.8rem auto 0.8rem 0.8rem;
+    padding: 0 0.4rem;
+    min-height: 1.6rem;
+    border-radius: 0.4rem;
+    text-align: left;
+    box-shadow: 2px 2px 2px #707780, -2px -2px 2px black;
+}
+.display_small p {
+    color: #222723;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    font-style: italic;
+    margin: 0;
+}
+
+
+.aux_display {
+    margin: 0.2rem 1rem 0.2rem 0;
+    text-align: right;
+    color: silver;
+    font-style: italic;
+}
+.aux_display p {
+    margin: 0.2rem;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    background-color: #33373b;
+    margin: 0.8rem auto;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+}
+.numbers_block, .controls_block {
+    display: grid;
+}
+.numbers_block a, .controls_block a {
+    display: block;
+    margin: 0.3rem;
+    border-radius: 0.2rem;
+    background-color: #a2a8ad;
+    box-shadow: 2px 2px 2px black;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    color: white;
+    line-height: 3rem;
+    font-size: 2.4rem;
+    font-weight: 500;
+    text-shadow: inset 1px 1px 1px rgb(211, 210, 210);
+}
+.numbers_block a:hover, .controls_block a:hover {
+    background-color: #82868a;
+}
+.numbers_block a:active, .controls_block a:active {
+    position: relative;
+    top: 2px;
+    left: 2px;
+} 
+
+.b1 {
+    grid-area: 3/1;
+}
+.b2 {
+    grid-area: 3/2;
+}
+.b3 {
+    grid-area: 3/3;
+}
+.b4 {
+    grid-area: 2/1;
+}
+.b5 {
+    grid-area: 2/2;
+}
+.b6 {
+    grid-area: 2/3;
+}
+.b7 {
+    grid-area: 1/1;
+}
+.b8 {
+    grid-area: 1/2;
+}
+.b9 {
+    grid-area: 1/3;
+}
+.b0 {
+    grid-area: 4/1;
+}
+.b_dot {
+    grid-area: 4/2;
+}
+.c_plus {
+    grid-area: 3/1;
+}
+.c_minus {
+    grid-area: 3/2;
+}
+.c_divide {
+    grid-area: 2/2;
+}
+.c_multiply {
+    grid-area: 2/1;
+}
+.c_multiply a {
+    font-size: 1.8rem;
+}
+.c_result {
+    grid-area: 4/1/4/3;
+}
+.c_result a {
+    font-size: 2.8rem;
+    padding: 0 0.2rem;
+    width: 6.3rem;
+}
+.c_clean {
+    grid-area: 1/1/1/3;
+}
+.c_clean a {
+    background-color: yellow;
+    color: rgb(34, 34, 34);
+    font-size: 1.2rem;
+    padding: 0 0.2rem;
+    width: 6.3rem;
+}
+.c_clean a:hover {
+    background-color: rgb(165, 165, 0);
+    color: whitesmoke;
+}
+.c_clean a:active {
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
